@@ -23,7 +23,7 @@ const greeting = {
   username: "babul09",
   title: "Hi all, I'm Babul",
   subTitle: emoji(
-    "A passionate Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and Flutter some other cool libraries and frameworks."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -54,9 +54,10 @@ const skillsSection = {
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Progressive Web Applications ( PWA )"),
+    emoji("⚡ App development using Flutter"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Integration of third party services such as Firebase/ AWS"
     )
   ],
 
@@ -71,10 +72,6 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "css3",
       fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
     },
     {
       skillName: "JavaScript",
@@ -127,14 +124,14 @@ const educationInfo = {
   schools: [
     {
       schoolName: "SRM Institute of Science And Technology",
-      logo: require("./assets/images/harvardLogo.png"),
+      logo: require("./assets/images/srm.png"),
       subHeader: "Bachelor in technology",
       duration: "September 2023 - current",
       
     },
     {
       schoolName: "Radiant International School",
-      logo: require("./assets/images/stanfordLogo.png"),
+      logo: require("./assets/images/radiant.png"),
       subHeader: "High School",
       duration: "",
       desc: "",
@@ -146,15 +143,19 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: false, //Set it to true to show Proficiency Section
+  viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      progressPercentage: "50%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Backend",
-      progressPercentage: "70%"
+      progressPercentage: "30%"
+    },
+    {
+      Stack: "Flutter/App Development",
+      progressPercentage: "30%"
     },
     {
       Stack: "Programming",
@@ -251,37 +252,29 @@ const achievementSection = {
       title: "Google Cloud Study Jams",
       subtitle:
         "Achieved 9th rank overall in cloud study jam hosted by google",
-      image: require("./assets/images/codeInLogo.webp"),
+      image: require("./assets/images/google.png"),
       imageAlt: "Google study jams Logo",
       footerLink: [
       
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "ASCII TO VIDEO CPP",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
+        "Developed a project which can convert a video into ascii art using opencv library.",
+      image: require("./assets/images/image.png"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
       ]
     },
 
     {
       title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
+      subtitle: "Completed Certifcation from Udemy for PWA Web App Development",
       image: require("./assets/images/pwaLogo.webp"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
+        
       ]
     }
   ],
@@ -365,7 +358,7 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
